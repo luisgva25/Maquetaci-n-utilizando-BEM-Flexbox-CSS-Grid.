@@ -622,3 +622,367 @@ p {
 }
 
 
+/* Ajustes generales para pantallas pequeñas */
+@media (max-width: 1024px) {
+
+    /* Header */
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header__nav {
+        margin-left: 0;
+    }
+
+    .header__image {
+        height: auto;
+        width: 100%;
+    }
+
+    .header__title {
+        font-size: 2rem;
+    }
+
+    .header__description {
+        font-size: 1.2rem;
+    }
+
+    /* Nosotros */
+    .nosotros {
+        grid-template-columns: 1fr;
+    }
+
+    .nosotros__title,
+    .nosotros__subtitle {
+        font-size: 1.8rem;
+    }
+
+    .nosotros__content {
+        grid-template-columns: 1fr;
+    }
+
+    /* Menú */
+    .menu {
+        grid-template-columns: 1fr;
+    }
+
+    .menu>.menu__nav {
+        margin: 1em;
+        grid-template-columns: 1fr;
+    }
+
+    .menu>.imagen {
+        justify-content: center;
+    }
+
+    /* Ambiente */
+    .ambiente {
+        grid-template-columns: 1fr;
+    }
+
+    .ambiente>.ambiente__nav {
+        margin: 1em;
+        grid-template-columns: 1fr;
+    }
+
+    .ambiente>.imagen {
+        justify-content: center;
+        margin: 0;
+    }
+
+    /* Información */
+    .info-container {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .info-box {
+        width: 80%;
+    }
+
+    .icon-number {
+        font-size: 1.2rem;
+    }
+
+    /* Promociones */
+    .promotions {
+        grid-template-columns: 1fr;
+    }
+
+    .promotions__content {
+        align-items: center;
+    }
+
+    .promotion-item__number {
+        width: auto;
+        height: auto;
+        font-size: 1.5rem;
+    }
+
+    /* Beneficios */
+    .beneficios {
+        grid-template-columns: 1fr;
+    }
+
+    .beneficios__list {
+        grid-template-columns: 1fr;
+    }
+    .Contacto {
+        padding: 2em 1em;
+    }
+    
+    .contacto_content {
+        grid-template-columns: 1fr;
+        /* Cambiamos a una columna */
+        gap: 1.5em;
+        /* Añadimos un espacio entre los elementos */
+    }
+    
+    .contacto_item {
+        padding: 1em;
+        /* Reducimos el padding */
+    }
+    
+    .Contacto__image {
+        height: 150px;
+        /* Ajustamos la altura */
+        background-size: cover;
+        background-position: center;
+    }
+    .proximos_pasos {
+        flex-direction: column; /* Alineamos los elementos en columna */
+        text-align: center;
+        padding: 1.5em;
+    }
+    
+    .text-section,
+    .image-section {
+        max-width: 100%; /* Ajustamos el ancho al 100% */
+        padding: 0;
+    }
+    
+    .text-section {
+        margin-bottom: 1.5em; /* Añadimos espacio entre las secciones */
+    }
+    
+    .text-section h2 {
+        font-size: 1.8rem; /* Ajustamos el tamaño del título */
+    }
+    
+    .text-section p {
+        font-size: 1rem; /* Ajustamos el tamaño del texto */
+    }
+    
+    .buttons a {
+        font-size: 0.9rem; /* Reducimos el tamaño de los botones */
+        padding: 0.8em 1.2em; /* Ajustamos el padding */
+    }
+    
+    .image-section img {
+        max-width: 90%; /* Reducimos el tamaño de la imagen */
+        border-radius: 8px; /* Mantenemos bordes redondeados */
+    }
+    
+}
+
+
+@media (max-width: 768px) {
+    /* Ajustes adicionales para pantallas más pequeñas */
+
+    /* Header */
+    .header__title {
+        font-size: 1.5rem;
+    }
+
+    .header__description {
+        font-size: 1rem;
+    }
+
+    /* Nosotros */
+    .nosotros__title {
+        font-size: 1.5rem;
+    }
+
+    .nosotros__content {
+        font-size: 1rem;
+    }
+
+    /* Menu */
+    .menu>.menu__nav {
+        gap: 0.5em;
+    }
+
+    /* Ambiente */
+    .ambiente__nav>h1 {
+        font-size: 1.2rem;
+    }
+
+    /* Información */
+    .info-box {
+        width: 100%;
+    }
+
+    .icon-number {
+        font-size: 1rem;
+    }
+
+    /* Promociones */
+    .promotion-item__number {
+        font-size: 1.2rem;
+    }
+
+    /* Beneficios */
+    .beneficios__title {
+        font-size: 1.2rem;
+    }
+
+    .contacto_content {
+        gap: 1em;
+        /* Reducimos el espacio entre elementos */
+    }
+
+    .contacto_item h4 {
+        font-size: 1rem;
+        /* Reducimos el tamaño del texto */
+    }
+
+    .contacto_item p {
+        font-size: 0.9rem;
+        /* Reducimos el tamaño del texto */
+    }
+
+    .text-section h2 {
+        font-size: 1.5rem;
+        /* Ajustamos el tamaño del título */
+    }
+
+    .text-section p {
+        font-size: 0.9rem;
+        /* Reducimos el texto */
+    }
+
+    .buttons a {
+        font-size: 0.8rem;
+        padding: 0.6em 1em;
+    }
+
+    .image-section img {
+        max-width: 100%;
+        /* Imagen más pequeña pero sin desbordar */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustes para móviles */
+
+    /* Header */
+    .header {
+        padding: 1em;
+    }
+
+    .header__image {
+        width: 100%;
+    }
+
+    .header__title {
+        font-size: 1.2rem;
+    }
+
+    .header__description {
+        font-size: 1rem;
+    }
+
+    /* Nosotros */
+    .nosotros__content {
+        grid-template-columns: 1fr;
+    }
+
+    .nosotros__subtitle {
+        font-size: 1rem;
+    }
+
+    /* Menú */
+    .menu__nav {
+        margin: 0;
+    }
+
+    /* Información */
+    .info-container {
+        padding: 1em;
+    }
+
+    .icon-number {
+        font-size: 0.9rem;
+    }
+
+    /* Promociones */
+    .promotions {
+        padding: 1rem;
+    }
+
+    .promotion-item__number {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    /* Beneficios */
+    .beneficios {
+        padding: 1rem;
+    }
+
+    .beneficios-item__number {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    /* Testimonios */
+    .testimonios__content {
+        grid-template-columns: 1fr;
+    }
+
+    .contacto_content {
+        padding: 1em;
+        /* Reducimos el padding general */
+    }
+
+    .contacto_item {
+        padding: 0.5em;
+        /* Reducimos aún más el padding */
+    }
+
+    .contacto_item h4 {
+        font-size: 0.9rem;
+    }
+
+    .contacto_item p {
+        font-size: 0.8rem;
+    }
+
+    .proximos_pasos {
+        padding: 1em;
+        /* Reducimos el padding general */
+    }
+
+    .text-section h2 {
+        font-size: 1.2rem;
+        /* Título más pequeño */
+    }
+
+    .text-section p {
+        font-size: 0.8rem;
+        /* Texto más compacto */
+    }
+
+    .buttons a {
+        font-size: 0.7rem;
+        padding: 0.5em 0.8em;
+    }
+
+    .image-section img {
+        max-width: 100%;
+        border-radius: 6px;
+        /* Ajustamos los bordes */
+    }
+}
+
