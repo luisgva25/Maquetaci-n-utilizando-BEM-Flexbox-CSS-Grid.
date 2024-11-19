@@ -1,6 +1,23 @@
-body {
-    background-color: white;
+:root {
+    --textoNegrita: 900;
+    --textoNormal: 400;
+    --textoThin: 100;
+    --bgPrincipal: #fbfaff;
+    --bgSecundario: #eae8f3;
+    --bgBannerSecundario: #ebdefe;
+    --bgBtnPrincipal: #2623b1;
 
+    --color_titulo: #403ccf;
+    --color_principal: #49495a;
+    --fuente_principal: 'Montserrat', sans-serif;
+    --tamano_texto: 20px;
+    --tamano_titulos: 60px;
+    --tamano_subtitulos: 2rem;
+}
+
+body {
+    width: 100%;
+    font-family: var(--fuente_principal);
 }
 
 
